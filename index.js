@@ -25,7 +25,7 @@ const prefix = "!";
 ////////////////////////
 client.on("ready", () => {
 
-    client.user.setActivity('!help | By : DzDev99', { type: 'WATCHING' })
+    client.user.setActivity('الُـيَ فَاكِرَ قًلُبّيَ طِيَبّ كِلُ سِنَُه وَُهوَ طِيَبّ', { type: 'WATCHING' })
 
 });
 client.on('message', async msg =>{
