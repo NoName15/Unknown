@@ -23,9 +23,6 @@ const client = new Discord.Client({disableEveryone: true});
 const prefix = "!";
 /////////////////////////
 ////////////////////////
-const Discord = require("discord.js");
-const client = new Discord.Client();
-
 
 
 client.on("ready", () => {
