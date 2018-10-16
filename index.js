@@ -23,11 +23,32 @@ const client = new Discord.Client({disableEveryone: true});
 const prefix = "!";
 /////////////////////////
 ////////////////////////
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
+
+
 client.on("ready", () => {
+console.log('By : m7md');
+client.user.setPresence({
+  status: 'dnd',
+  game: { 
+     type: 0,
+     name: 'Bad Omarr..#2189',
+     details: `بّـاشِـا مٌصّـرَ`,
+     url: 'http://twitch.tv/M7md_Salih',
+     state: `الُـيَ فَاكِرَ قًلُبّيَ طِيَبّ كِلُ سِنَُه وَُهوَ طِيَبّ`,
+    application_id: '377479790195769345',
+     assets: {
+        small_image: `377480550207717376`,
+        small_text: 'الُـيَ فَاكِرَ قًلُبّيَ طِيَبّ كِلُ سِنَُه وَُهوَ طِيَبّ',
+        large_image: `377480353259978752`,
+        large_text: `الُـيَ فَاكِرَ قًلُبّيَ طِيَبّ كِلُ سِنَُه وَُهوَ طِيَبّ` }
 
-    client.user.setActivity('الُـيَ فَاكِرَ قًلُبّيَ طِيَبّ كِلُ سِنَُه وَُهوَ طِيَبّ', { type: 'WATCHING' })
-
+  }
+    });
 });
+
 const devs = ['450843030963093524','480407581085532180'];
 
 client.on('message', message => {
