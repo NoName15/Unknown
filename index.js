@@ -350,23 +350,67 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
-
-
 client.on('message', message => {
-    if (message.content === '!help') {
-        let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('Music Master By :DzDev99')
-      message.channel.send(helpEmbed);
+    if (message.author.bot) return;
+     if (message.content === prefix + "help") {
+		 message.channel.send('**The Message Was Sent On Private**');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ **
+__~~Alpha Shop Music~~__ By: RO7#9078
+╭━━━┳╮╱╱╱╭╮╱╱╱╱╱╭━╮╭━╮
+┃╭━╮┃┃╱╱╱┃┃╱╱╱╱╱┃┃╰╯┃┃
+┃┃╱┃┃┃╭━━┫╰━┳━━╮┃╭╮╭╮┣╮╭┳━━┳┳━━╮
+┃╰━╯┃┃┃╭╮┃╭╮┃╭╮┃┃┃┃┃┃┃┃┃┃━━╋┫╭━╯
+┃╭━╮┃╰┫╰╯┃┃┃┃╭╮┃┃┃┃┃┃┃╰╯┣━━┃┃╰━╮
+╰╯╱╰┻━┫╭━┻╯╰┻╯╰╯╰╯╰╯╰┻━━┻━━┻┻━━╯
+╱╱╱╱╱╱┃┃
+╱╱╱╱╱╱╰╯
+╔[❖════════════❖]╗
+             Prefix = ' ! '
+╚[❖════════════❖]╝
+
+╔[❖════════════❖]╗
+             Music Commands كومندات الميوزك
+╚[❖════════════❖]╝
+
+ ❖ !play ➾ play a song  تشغل اغنية برابط او اسم
+
+ ❖ !stop ➾ stop the song  توقف البوت نهائيا
+ 
+ ❖ !np ➾ view the current song  تشوف الاغنية اللي مشغلة حاليا
+
+ ❖ !queue ➾ the current playlist  تشوف قائمة التشغيل الحالية
+
+ ❖ !skip ➾ skips a song تتجاوز اغنية
+ 
+ ❖ !resume ➾ resums a song  تشغل الاغنية بعد التوقيف المؤقت
+
+ ❖ !pause ➾ pauses a song  تووقف اغنية مؤقتا
+
+ ❖ !join ➾ joins your voice channel  تخلي البوت يدخل رومك الصوتي
+
+ ❖ !disconnect ➾ disconnects from your voice channel  تخلي البوت يخرج من رومك الصوتي
+
+╔[❖════════════❖]╗
+             General Commands كومندات عامة
+╚[❖════════════❖]╝
+
+ ❖ !ping ➾ view my ping !  تشوف سرعة اتصال البوت
+
+==================================================================
+
+Server support: https://discord.gg/cUgYbEr   سيرفر السيبورت
+
+==================================================================
+
+
+`);
+
     }
 });
 
