@@ -27,7 +27,7 @@ const prefix = "!";
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-    client.user.setGame(`الُـيَ فَاكِرَ قًلُبّيَ طِيَبّ كِلُ سِنَُه وَُهوَ طِيَبّ`,`www.twitch.tv/v5bz`);
+    client.user.setGame(`Error Station / !help`,`www.twitch.tv/v5bz`);
   });
 
 const devs = ['450843030963093524','480407581085532180'];
@@ -361,15 +361,8 @@ client.on('message', message => {
 
  message.author.sendMessage(`
  **
-__~~Alpha Shop Music~~__ By: RO7#9078
-╭━━━┳╮╱╱╱╭╮╱╱╱╱╱╭━╮╭━╮
-┃╭━╮┃┃╱╱╱┃┃╱╱╱╱╱┃┃╰╯┃┃
-┃┃╱┃┃┃╭━━┫╰━┳━━╮┃╭╮╭╮┣╮╭┳━━┳┳━━╮
-┃╰━╯┃┃┃╭╮┃╭╮┃╭╮┃┃┃┃┃┃┃┃┃┃━━╋┫╭━╯
-┃╭━╮┃╰┫╰╯┃┃┃┃╭╮┃┃┃┃┃┃┃╰╯┣━━┃┃╰━╮
-╰╯╱╰┻━┫╭━┻╯╰┻╯╰╯╰╯╰╯╰┻━━┻━━┻┻━━╯
-╱╱╱╱╱╱┃┃
-╱╱╱╱╱╱╰╯
+__~~Error S Music~~__ By: RO7#9078
+
 ╔[❖════════════❖]╗
              Prefix = ' ! '
 ╚[❖════════════❖]╝
