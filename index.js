@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "!";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -408,7 +408,7 @@ Server support: https://discord.gg/cUgYbEr   سيرفر السيبورت
 });
 
 client.on('message', message => {
-    if (message.content === '!general_commands') {
+    if (message.content === '1general_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
