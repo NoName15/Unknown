@@ -30,7 +30,7 @@ client.on('ready', () => {
     client.user.setGame(`Error Station / !help`,`www.twitch.tv/v5bz`);
   });
 
-const devs = ['450843030963093524','480407581085532180'];
+const devs = ['382593940165099530','480407581085532180'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
